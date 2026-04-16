@@ -1,13 +1,15 @@
+import random
+
 from fastapi import FastAPI
 
 app = FastAPI()
 
-
-@app.get("/helloworld")
+#http://127.0.0.1:8000/
+@app.get("/")
 def read_root():
     return {"Hello": "World"}
 
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: str | None = None):
-    return {"item_id": item_id, "q": q}
+#teste
+@app.get("/teste1")
+async def funcaoteste():
+    return {"teste":"deu certo"}
