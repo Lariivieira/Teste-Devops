@@ -9,7 +9,7 @@ app = FastAPI()
 def read_root():
     return {"Hello": "World"}
 
-
+#teste
 @app.get("/teste1")
 async def funcaoteste():
     return {"teste":"deu certo"}
