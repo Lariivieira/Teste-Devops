@@ -12,4 +12,4 @@ def read_root():
 #teste
 @app.get("/teste1")
 async def funcaoteste():
-    return {"teste":"deu certo"}
+    return {"teste":"tudo certo"}
